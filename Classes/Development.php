@@ -50,11 +50,9 @@ class Development implements ErrorHandlerInterface
             return $handler;
         }
 
-        if (empty($handler)) {
-            $handler = new PrettyPageHandler;
-            if (!empty($this->$settings['editor'])) {
-                $handler->setEditor($this->settings['editor']);
-            }
+        $handler = new PrettyPageHandler;
+        if (!empty($this->$settings['editor'])) {
+            $handler->setEditor($this->settings['editor']);
         }
         return $handler;
     }

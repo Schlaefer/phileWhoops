@@ -1,6 +1,8 @@
 phileDebugbar
 =============
 
+[![Build Status](https://travis-ci.org/Schlaefer/phileWhoops.svg?branch=master)](https://travis-ci.org/Schlaefer/phileWhoops)
+
 Adds a [Whoops](http://phpdebugbar.comhttps://github.com/filp/whoops/) to [Phile](https://github.com/PhileCMS/Phile) for development.
 
 

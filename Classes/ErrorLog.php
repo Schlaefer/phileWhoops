@@ -2,6 +2,8 @@
 
 namespace Phile\Plugin\Siezi\PhileWhoops;
 
+use Phile\ServiceLocator\ErrorHandlerInterface;
+
 class ErrorLog implements ErrorHandlerInterface
 {
     public function handleError(int $errno, string $errstr, ?string $errfile, ?string $errline)

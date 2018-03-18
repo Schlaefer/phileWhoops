@@ -1,3 +1,8 @@
 <?php
 
-return [];
+return [
+    /**
+     * [error_log|development]
+     */
+    'handler' => 'development'
+];
