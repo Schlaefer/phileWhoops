@@ -3,11 +3,9 @@
 namespace Phile\Plugin\Siezi\PhileWhoops;
 
 use Phile\ServiceLocator\ErrorHandlerInterface;
-use Whoops\Handler\{
-    Handler,
-    PlainTextHandler,
-    PrettyPageHandler
-};
+use Whoops\Handler\Handler;
+use Whoops\Handler\PlainTextHandler;
+use Whoops\Handler\PrettyPageHandler;
 
 class Development implements ErrorHandlerInterface
 {
