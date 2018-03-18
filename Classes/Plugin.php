@@ -26,7 +26,7 @@ class Plugin extends AbstractPlugin
                 $handler = new Development($this->settings);
                 break;
             case Plugin::HANDLER_ERROR_LOG:
-                $handler = new ErrorLog($this->settings);
+                $handler = new ErrorLog;
                 break;
             default:
                 return;
