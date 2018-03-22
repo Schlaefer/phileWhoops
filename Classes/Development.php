@@ -49,7 +49,7 @@ class Development implements ErrorHandlerInterface
         }
 
         $handler = new PrettyPageHandler;
-        if (!empty($this->$settings['editor'])) {
+        if (!empty($this->settings['editor'])) {
             $handler->setEditor($this->settings['editor']);
         }
         return $handler;
