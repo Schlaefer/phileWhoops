@@ -6,14 +6,18 @@ Adds a [Whoops](https://github.com/filp/whoops/) to [Phile](https://github.com/P
 
 ## Installation
 
-```
+```bash
 composer require siezi/phile-whoops
 ```
 
 ## Activation
 
-```
-$config['plugins']['siezi\\phileWhoops'] = ['active' => true];
+```php
+$config['plugins']['siezi\\phileWhoops'] = [
+    'active' => true,
+    // 'development' -> Whoops, 'error_log' -> file logging
+    'handler' => 'development'
+];
 ```
 
 ## Usage
