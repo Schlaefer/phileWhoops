@@ -18,6 +18,8 @@ class ErrorLog implements ErrorHandlerInterface
         $file = $exception->getFile();
         $line = $exception->getLine();
         $this->log($code, $message, $file, $line);
+        header($_SERVER['SERVER_PROTOCOL'] . ' 500 Internal Server Error', true, 500);
+        exit;
     }
 
     public function handleShutdown()
