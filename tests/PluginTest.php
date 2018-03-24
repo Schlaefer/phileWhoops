@@ -17,7 +17,7 @@ class PluginTest extends TestCase
     {
         $config = new Config([
             'plugins' => [
-                'siezi\\phileWhoops' => ['active' => true]
+                'siezi\\phileWhoops' => ['active' => true, 'handler' => 'development']
             ]
         ]);
         $eventBus = new \Phile\Core\Event;
