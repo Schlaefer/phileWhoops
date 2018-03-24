@@ -12,7 +12,8 @@
     ],
     "require": {
         "phile-cms/phile": "^1.10 || dev-develop" ,
-        "filp/whoops": "^2.1"
+        "filp/whoops": "^2.1",
+        "symfony/var-dumper": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "^7.0"
