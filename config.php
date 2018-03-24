@@ -6,6 +6,10 @@ return [
     /**
      * [error_log|development]
      */
-    'handler' => 'development'
     'handler' => Plugin::HANDLER_ERROR_LOG,
+    /**
+     * - null: use default PHP error.log
+     * - string: path to custom error.log
+     */
+    'error_log_file' => null 
 ];

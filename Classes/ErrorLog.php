@@ -6,6 +6,13 @@ use Phile\ServiceLocator\ErrorHandlerInterface;
 
 class ErrorLog implements ErrorHandlerInterface
 {
+    public function __construct(?string $logfile = null)
+    {
+        if ($logfile) {
+            ini_set('error_log', $logfile);
+        }
+    }
+
     public function handleError(int $errno, string $errstr, ?string $errfile, ?string $errline)
     {
         $this->log($errno, $errstr, $errfile, $errline);

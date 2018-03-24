@@ -16,7 +16,8 @@ class Plugin extends AbstractPlugin
     protected $settings = [
         'handler' => self::HANDLER_DEVELOPMENT,
         'editor' => null,
-        'level' => -1
+        'level' => -1,
+        'error_log_file' => null
     ];
 
     public function registerErrorHandler()
@@ -26,7 +27,7 @@ class Plugin extends AbstractPlugin
                 $handler = new Development($this->settings);
                 break;
             case Plugin::HANDLER_ERROR_LOG:
-                $handler = new ErrorLog;
+                $handler = new ErrorLog($this->settings['error_log_file']);
                 break;
             default:
                 return;
