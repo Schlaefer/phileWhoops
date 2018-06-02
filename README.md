@@ -1,3 +1,5 @@
+**Note: This repository is archived. The functionality of this plugin is included in Phile 1.11+.**
+
 # phileWhoops
 
 [![Build Status](https://travis-ci.org/Schlaefer/phileWhoops.svg?branch=master)](https://travis-ci.org/Schlaefer/phileWhoops)
